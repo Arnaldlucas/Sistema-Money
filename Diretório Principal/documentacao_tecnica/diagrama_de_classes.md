@@ -1,2 +1,2 @@
 # Diagrama de classe- +Money
-![Diagrama de Classes](Sistema/img_diagrama_de_classes.png)
+![Diagrama de Classes](img_diagrama_de_classes.png)
