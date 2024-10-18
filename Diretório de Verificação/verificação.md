@@ -22,4 +22,4 @@ Abaixo também vamos disponibilizar as tabelas das falhas que foram referenciada
 tabelas do defeito, para auxiliar no processo de análise do leitor:
 
 Falha- Cadastro de Solicitações de Demandas Falsas ou Inconsistentes
-link: 
+# https://github.com/Arnaldlucas/Sistema/issues/1#issuecomment-2422704382
