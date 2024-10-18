@@ -1,6 +1,33 @@
 # **Validação da Usabilidade do Sistema +Money**
 
-  Este documento tem como objetivo principal descrever o processo de validação de usabilidade aplicado ao sistema +Money, o propósito é assegurar que cada tela feita no projeto atenda aos requisitos de acordo com as heuristicas criadas por Jakob Nielsen. Para o sistema +Money, o processo de validação de usabilidade foi realizado com o intuito de verificar e documentar, os possiveis erros e problemas encontrados na interface do sistema
+Este documento tem como objetivo principal descrever o processo de validação de usabilidade aplicado ao sistema +Money, o propósito é assegurar que cada tela feita no projeto atenda aos requisitos de acordo com as heuristicas criadas por Jakob Nielsen. Para o sistema +Money, o processo de validação de usabilidade foi realizado com o intuito de verificar e documentar, os possiveis erros e problemas encontrados na interface do sistema
+
+A validação de usabilidade é uma etapa essencial no desenvolvimento do +Money, com o propósito de assegurar que o sistema atenda às expectativas dos usuários em termos de facilidade de uso, eficiência e satisfação, esse processo tem como principal objetivo identificar possíveis problemas na interface que possam impactar negativamente a experiência do usuário, através dessa validação, é possível corrigir erros e aperfeiçoar o sistema para garantir que ele seja funcional e intuitivo, promovendo uma experiência positiva para o usuário final.
+
+### Heurísticas de Jakob Nielsen
+
+Para conduzir o processo de validação de usabilidade no sistema **+Money**, foram utilizadas as 10 heurísticas de usabilidade criadas por Jakob Nielsen, que são diretrizes amplamente aceitas no campo de design de interfaces, as heurísticas ajudam a identificar problemas na interação do usuário com o sistema, e são as seguintes:
+
+1. **Visibilidade do status do sistema**: O sistema deve sempre manter o usuário informado sobre o que está acontecendo, proporcionando feedback adequado em tempo hábil.
+
+2. **Correspondência entre o sistema e o mundo real**: O sistema deve falar a linguagem dos usuários, com palavras, frases e conceitos familiares, em vez de termos técnicos.
+
+3. **Controle e liberdade do usuário**: Usuários frequentemente realizam ações por engano e precisam de uma "saída de emergência" clara, como a função de desfazer ou cancelar.
+
+4. **Consistência e padrões**: Os usuários não devem precisar se perguntar se diferentes palavras, ações ou situações significam a mesma coisa; a consistência é essencial.
+
+5. **Prevenção de erros**: É melhor prevenir a ocorrência de problemas do que apenas oferecer boas mensagens de erro.
+
+6. **Reconhecimento em vez de memorização**: O usuário não deve ser obrigado a lembrar informações de uma parte do sistema para outra. As instruções devem ser visíveis ou facilmente acessíveis sempre que necessário.
+
+7. **Flexibilidade e eficiência de uso**: O sistema deve atender tanto usuários iniciantes quanto avançados, permitindo atalhos que acelerem as interações para os mais experientes.
+
+8. **Design estético e minimalista**: As interfaces não devem conter informações irrelevantes ou raramente necessárias. Todo elemento extra reduz a visibilidade das informações realmente relevantes.
+
+9. **Ajudar os usuários a reconhecer, diagnosticar e corrigir erros**: As mensagens de erro devem ser expressas em linguagem simples, indicando o problema e sugerindo uma solução.
+
+10. **Ajuda e documentação**: Mesmo que o sistema possa ser usado sem documentação, é importante fornecer ajuda e documentação acessíveis para casos excepcionais.
+
 
 ## Tela de Login / Cadastro no sistema
 
