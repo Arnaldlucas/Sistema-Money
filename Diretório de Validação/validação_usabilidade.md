@@ -2,8 +2,6 @@
 
   Este documento tem como objetivo principal descrever o processo de validação de usabilidade aplicado ao sistema +Money, o propósito é assegurar que cada tela feita no projeto atenda aos requisitos de acordo com as heuristicas criadas por Jakob Nielsen. Para o sistema +Money, o processo de validação de usabilidade foi realizado com o intuito de verificar e documentar, os possiveis erros e problemas encontrados na interface do sistema
 
-Aqui está o conteúdo transformado em formato Markdown (.md):
-
 ## Tela de Login / Cadastro no sistema
 
 - **Visibilidade do status do sistema**: Não há detalhes específicos sobre feedback ao usuário. É importante que o sistema informe claramente se o login/cadastro foi bem-sucedido ou se houve algum erro.
