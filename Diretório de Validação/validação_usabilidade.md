@@ -2,7 +2,7 @@
 
 Este documento tem como objetivo principal descrever o processo de validação de usabilidade aplicado ao sistema +Money, o propósito é assegurar que cada tela feita no projeto atenda aos requisitos de acordo com as heuristicas criadas por Jakob Nielsen. Para o sistema +Money, o processo de validação de usabilidade foi realizado com o intuito de verificar e documentar, os possiveis erros e problemas encontrados na interface do sistema
 
-A validação de usabilidade é uma etapa essencial no desenvolvimento do +Money, com o propósito de assegurar que o sistema atenda às expectativas dos usuários em termos de facilidade de uso, eficiência e satisfação, esse processo tem como principal objetivo identificar possíveis problemas na interface que possam impactar negativamente a experiência do usuário, através dessa validação, é possível corrigir erros e aperfeiçoar o sistema para garantir que ele seja funcional e intuitivo, promovendo uma experiência positiva para o usuário final.
+A validação de usabilidade é uma etapa essencial no desenvolvimento de um sistema, com o propósito de assegurar que o mesmo atenda às expectativas dos usuários em termos de facilidade de uso, eficiência e satisfação, esse processo tem como principal objetivo identificar possíveis problemas na interface que possam impactar negativamente a experiência do usuário, através dessa validação, é possível corrigir erros e aperfeiçoar o sistema para garantir que ele seja funcional e intuitivo, promovendo uma experiência positiva para o usuário final.
 
 ### Heurísticas de Jakob Nielsen
 
