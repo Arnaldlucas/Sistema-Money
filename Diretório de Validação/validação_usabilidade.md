@@ -50,8 +50,9 @@ Para conduzir o processo de validação de usabilidade no sistema **+Money**, fo
 - **Prevenção de erros**: Validar os dados inseridos pelo usuário (por exemplo, valores numéricos e datas).
 - **Consistência e padrões**: Certificar-se de que os campos seguem o mesmo padrão de entrada em todo o aplicativo.
 
-## Tela de Selecionar uma região / Tela com a região adicionada e um valor
-![Tela Inicial](
+## Tela de Adicionar uma fonte de renda / Tela com a fonte adicionada e um valor
+![Tela Inicial](https://github.com/Arnaldlucas/Sistema-Money/blob/main/Diret%C3%B3rio%20de%20Valida%C3%A7%C3%A3o/Imagens/sele%C3%A7%C3%A3oTipoReceita.png)
+![Tela Inicial](https://github.com/Arnaldlucas/Sistema-Money/blob/main/Diret%C3%B3rio%20de%20Valida%C3%A7%C3%A3o/Imagens/registroReceita.png)
 - **Correspondência entre o sistema e o mundo real**: Usar terminologias que o usuário compreenda e garantir que a seleção de região esteja alinhada com a expectativa do usuário (exemplo: mapa interativo).
 - **Flexibilidade e eficiência de uso**: O sistema poderia permitir a seleção rápida de regiões favoritas ou mais usadas.
 
@@ -83,10 +84,6 @@ Para conduzir o processo de validação de usabilidade no sistema **+Money**, fo
 - **Correção de erros**: Informar ao usuário que o campo é obrigatório e não permitir prosseguir sem preenchê-lo.
 - **Prevenção de erros**: Poderia ser útil sugerir valores automáticos caso o campo esteja vazio, como uma meta padrão.
 
-## Tela com todos os valores aplicados
-![Tela Inicial](
-- **Visibilidade do status do sistema**: Apresentar um resumo claro com os valores aplicados, metas atingidas e saldo atual de forma organizada.
-- **Reconhecimento em vez de memorização**: O usuário deve conseguir verificar rapidamente a situação da poupança sem precisar se lembrar de detalhes previamente inseridos.
 
 Esses pontos são baseados nos princípios de usabilidade de Nielsen, focando na eficiência e na facilidade de uso para garantir uma boa experiência do usuário.
 
