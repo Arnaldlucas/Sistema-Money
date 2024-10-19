@@ -1,0 +1,186 @@
+
+
+.close {
+    
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilo do modal */
+#modalDialog {
+    width: 70%;
+    height: 70%;
+    background-color: #f6f6ff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+    box-shadow: 3px 1px 10px rgba(162, 1, 255, 0.5);
+    z-index: 2;
+    border-radius: 10px;
+    border: none;
+    padding-top: 0;
+    margin-top: 0px;
+}
+
+
+#modalDialog button {
+    background-color: #AB00FF;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#modalDialog button:hover {
+    background-color: #9a00e1;
+}
+
+
+
+
+.modal-top{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+/* Estilo do formulário dentro do modal */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contend_coin{
+    display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            width: 100%;
+           
+            margin: 0;
+            overflow: hidden;
+}
+/*=================================*/
+
+.coin-container {
+    background-color: #7bb0e8;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: url('../imagens/Coin.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+    color: #b8860b;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    z-index: 2; /* Certifique-se de que a moeda está acima da sombra */
+}
+
+.coin input {
+    width: 60%;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    font-weight: bolder;
+    color: black;
+}
+
+.coin-shadow {
+    position: relative;
+    top: -13px;
+    width: 150px;
+    height: 20px; /* Altura da sombra */
+    background-color: rgba(0, 0, 0, 0.2); /* Cor da sombra */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1; /* Certifique-se de que a sombra está abaixo da moeda */
+    bottom: -8px; /* Ajusta a posição vertical para que a sombra fique diretamente abaixo */
+    border-radius: 40%; /* Bordas arredondadas para a sombra */
+}
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.button-container button, 
+.button-container input[type="submit"] {
+    margin-right: 10px;
+}
+
+
+
+.coin-title {
+    margin-top: 30px;
+    width: 60%;
+    text-align: center;
+    font-size: 25pt;
+    
+    background-color: #7bb0e8;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    z-index: 2; /* Certifique-se de que o título está acima da moeda */
+}
+@keyframes rollIn {
+    0% {
+        transform: translateX(-400px) rotate(0deg) scale(0.5);
+    }
+    100% {
+        transform: translateX(0) rotate(360deg) scale(1);
+    }
+}
+
+@keyframes rollOut {
+    0% {
+        transform: translateX(0) rotate(0deg) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(400px) rotate(360deg) scale(0.5);
+        opacity: 0;
+    }
+}
+
+
+.animate-coin-in {
+    animation: rollIn 2s forwards;
+}
+
+.animate-coin-out {
+    animation: rollOut 2s forwards;
+}
+

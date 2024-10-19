@@ -1,0 +1,610 @@
+/* CSS fornecido */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    max-width: 100%; 
+    height: 100vh;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    gap: 1.5rem;
+    overflow-y: auto;
+}
+
+.despesa-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.despesa-list .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0.5rem;
+    background-color: #e9e8f4;
+    border-radius: 6px;
+    gap: 1rem;
+    margin-top: 0.2rem;
+}
+
+.card .card-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    ;
+}
+
+
+.despesa-value {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #db3232;
+}
+
+.receita-value {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #30a659;
+}
+
+.card .card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: baseline;
+}
+
+.btn-excluir {
+    background-color: #e9e8f4;
+    border: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #d62255;
+}
+
+.btn-editar {
+    background-color: #e9e8f4;
+    border: 0;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #696868;
+}
+
+.data-card {
+    padding: 0.2rem;
+    background-color: rgb(210, 209, 222);
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+}
+
+.mais {
+    width: 19vw;
+    padding-top: 1.2rem;
+    background-color: #AB00FF;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    gap: 0.5rem;
+}
+
+.dados {
+    background-color: #DFDFF7;
+    width: 60vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 2rem;
+}
+
+.perfil {
+    margin-top: 10px;
+    width: 15vw;
+    padding: 1rem;
+    
+}
+
+.dados h5 {
+    text-align: baseline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.dados .title {
+    margin: 1rem 2rem;
+}
+
+.dados-balanco {
+    background-color: #AB00FF;
+    margin: 1rem;
+    height: 20vh;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.dados-balanco .info-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.dados-balanco .info-agroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.balanco-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.btn-view {
+    cursor: pointer;
+}
+
+
+.dados .icon-dados {
+    font-size: 2rem;
+    background-color: #8300C4;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+
+
+.dados-info h2 {
+    color: white;
+    background-color: #AB00FF;
+    margin: 0;
+}
+
+
+.perfil-dados {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
+.perfil-radar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    height: 40vh;
+    margin-top: 2rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+
+
+
+.mais img {
+    width: 8rem;
+    margin-top: 1rem;
+}
+
+.box-page {
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.page-one {
+    background-color: #f3f3ff;
+    width: 48%;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+    height: 45vh;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.box-metas {
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+}
+
+.dica-card {
+    border-radius: 1rem;
+    flex: 1;
+    background-color: #fff;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+.meta-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.meta-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.meta-title {
+    font-weight: bold;
+}
+
+.progresso .progress-content {
+    height: 100%;
+    width: 20%;
+    border-radius: 5px;
+    background-color: #32d15d;
+}
+
+.meta-subdescricao {
+    font-size: 0.9rem;
+    color: #3b3939cc;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progresso {
+    width: 95%;
+    background-color: #cccc;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.dica-card .dica-icon {
+    width: 4rem;
+    height: 50px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cc8aed;
+    color: #7502ae;
+    font-size: 1.5rem;
+}
+
+.dica-title {
+    font-weight: bold;
+}
+
+.dica-descricao {
+    font-size: 0.9rem;
+}
+
+.meta-card {
+    flex: 1;
+    background-color: #fff;
+    height: 15vh;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.perfil-icon {
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #AB00FF;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 4.5rem;
+}
+
+.page-one::-webkit-scrollbar {
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+.page-one::-webkit-scrollbar-track {
+    background: #f3f3ff;
+    /* color of the tracking area */
+}
+
+.page-one::-webkit-scrollbar-thumb {
+    background-color: #b9b9ba;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid #f3f3ff;
+    /* creates padding around scroll thumb */
+}
+
+
+
+.mais-botao {
+    width: 90%;
+    display: flex;
+    border-radius: 10px;
+    background: #a503f6;
+    transition: all 0.5s ease-out;
+}
+
+.mais-botao:hover {
+    background: #7502ae;
+
+}
+
+.mais-botao a {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+}
+
+.mais-botao i {
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+
+.mais-botao:hover a {
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* Estilo do backdrop */
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    filter: blur(5px);
+    display: none;
+    z-index: 1;
+}
+
+/*Teste Estilo Lista de Despesa*/
+
+.data {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background-color: #AB00FF;
+    color: white;
+    padding: 1rem;
+    margin-left: 1rem;
+    justify-content: space-between;
+    /* Adiciona espaço entre os filhos */
+}
+
+
+
+.data-div01 {
+    background-color: #AB00FF;
+    display: flex;
+    width: 60%;
+    font-weight: bold
+}
+
+.data-div02 {
+    background-color: #AB00FF;
+    display: flex;
+    width: 38%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.data-div02 {
+    margin-left: auto;
+    /* Este já garante que o div02 vai para a extrema direita */
+}
+
+
+.one-one a {
+    text-decoration: none;
+    color: white;
+}
+
+.one-one a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.one-one a {
+    text-decoration: none;
+    color: white;
+}
+
+.one-one a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#dialog-receita {
+    width: 30%;
+    /* Ajuste conforme necessário */
+    max-height: 70%;
+    /* Ajuste conforme necessário */
+    overflow-y: auto;
+    /* Adiciona a barra de rolagem vertical se necessário */
+    overflow-x: hidden;
+    /* Evita a barra de rolagem horizontal */
+}
+
+#dialog-receita .data {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#dialog-receita .data-div01 {
+    float: left;
+}
+
+#dialog-receita .data-div02 {
+    float: right;
+}
+
+
+.top_radar {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-menu{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+    width: 3rem;
+    height: 3rem;
+    background-color: #AB00FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    box-shadow: 6px 6px 20px #b8b7b7;
+    cursor: pointer;
+    display: none;
+}
+
+.poupar-btn{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem;
+    background-color: #AB00FF;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    gap: 0.3rem;
+}
+.oculto{
+    display: flex !important;
+}
+
+.balance-value{
+    display: none;
+}
+.asteriscos{
+    display: none;
+}
+
+.visible{
+    display: block !important;
+}
+
+.top_radar i{
+    background-color: #b8b7b7;
+    padding: 0.3rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 915px) {
+
+    .mais{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50vw;
+        box-shadow: 6px 6px 60px #7a7777;
+        
+    }
+    .btn-menu{
+        display: flex;
+    }
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .dados{
+        width: 100vw;
+        min-height: 95vh;
+    }
+    .perfil{
+        width: 95vw;
+        padding: 0.5rem 1rem;
+        min-height: 100vh;
+        margin-top: 0;
+    }
+
+    .perfil-dados{
+        padding: 1rem;
+        align-items: start;
+    }
+
+    .perfil-icon{
+        width: 50px;
+        height: 50px;
+        margin-top: 0px;
+        font-size: 1.5rem;
+       
+    }
+    .mais{
+        display: none;
+    }
+    .meta-descricao{
+        font-size: 0.9rem;
+    }
+    .meta-subdescricao{
+        font-size: 0.6rem;
+    }
+
+    .dica-descricao{
+        font-size: 0.8rem;
+    }
+
+    .dica-title{
+        font-size: 0.9rem;
+    }
+}

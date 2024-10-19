@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    height: auto;
+}
+/* navegação */
+.navbar {
+    background-color: #2a1067;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .logo {
+    font-size: 1.5rem;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-right: 20px;
+    padding: 5px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+form input{
+    background-color: transparent; border:0px; color:white; 
+}
+
+form input:hover{
+    background-color: white; border:0px; color:black; 
+}
+
+.nav-links li:hover{
+    background-color: white; border:0px; color:black; 
+    border-radius: 5px;
+}
+
+.nav-links li a:hover{
+    background-color: white; border:0px; color:black; 
+    border-radius: 5px;
+}
+
+/* header */
+header{
+   margin-top: 10px;
+   margin-left: 10px;
+}
+/* cards */
+
+h1{
+    padding: 20px;
+    text-align: center;
+}
+.container {
+    border-radius: 10px;
+    background-color: #5256a5;
+    border: #2a1067 1px solid;
+    margin-top: 10px;
+    width: 100%;
+    height: 440px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Ajustado para flex-start para alinhar as imagens à esquerda */
+    align-items: center; /* Ajustado para flex-start para alinhar as imagens no topo */
+    flex-wrap: nowrap; /* Impede que as imagens quebrem a linha */
+    overflow-x: hidden; /* Adiciona uma barra de rolagem horizontal quando necessário */
+    overflow-y: hidden; /* Oculta a barra de rolagem vertical */
+}
+
+
+.card {
+    flex-shrink: 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;margin-right: 5px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*Adiciona sombrinha*/
+}
+.card:last-child {
+    margin-right: 0; /* Remove o espaço à direita da última imagem */
+}
+.card-images {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-grow: 1;/*espaço que a imagem deve ocupar*/
+}
+
+.card2 {
+    background-color: white;
+    flex-shrink: 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;margin-right: 5px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /*Adiciona sombrinha*/
+}
+.card2:last-child {
+    margin-right: 0; /* Remove o espaço à direita da última imagem */
+}
+
+.service-image {
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.description {
+    text-align: center;
+}
+.learn-more-btn {
+    margin-top: auto;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #6A6EBE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.learn-more-btn:hover{
+    background-color: #5256a5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    height: auto;
+    max-height: calc(100vh - 30%);/*definindo uma aututa maxima*/
+    width: 80%;
+    margin: 15% auto 0 auto; /*remove a margem inferior e ajuste a margem superior*/
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: auto; /* Alinhar ao fundo */
+}
+.confirm:hover,
+.confirm:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.confirm-modal-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6A6EBE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.confirm-modal-btn:hover{
+    background-color: #5256a5;
+}
+/*footer*/
+footer {
+    margin-top: 30px;
+    background-color: #333;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+}
+.footer-column:last-child {
+    margin-right: 0;
+}
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+.footer-column img {
+    max-height: 100px;
+}
+  

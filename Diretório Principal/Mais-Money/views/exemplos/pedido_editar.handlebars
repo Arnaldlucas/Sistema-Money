@@ -1,0 +1,84 @@
+
+<body>
+    <link rel="stylesheet" href="/css/estilo_cliente/estilo_pedido.css">
+
+    <nav class="navbar">
+        <div class="logo">ServTec</div>
+        <ul class="nav-links">
+           <form action="/voltaInicio" method="post">
+        <li><input  type="submit" value="Home"></li></form>
+        </ul>
+      </nav>
+
+<div class="cont">
+<div class="half-page">
+  
+    <img src="/imagens/{{pedido.imagem}}" alt="Sua Imagem">
+    <div class="info">
+        <!-- Coloque suas informações aqui -->
+        <h2>{{pedido.nome}}</h2>
+        <p>Valor:R$ {{pedido.valor}}</p>
+        <p>Descrição: {{pedido.descricao}}</p>
+    </div>
+   
+</div>
+<div class="container">
+    <h1>Editar Pedido</h1>
+    <div class="button-container">
+        <form id="orderForm" method="post" action="/solicitarEditarPedido">
+        <input type="hidden" name="idPedido" value="{{pedido.idPedido}}">
+
+            <label for="pagamento">Forma de Pagamento: {{pedido.formaPagamento}}</label>
+            <select id="pagamento" name="pagamento" required>
+                <option value="{{pedido.formaPagamento}}">Editar Pagamento</option>
+                <option value="credito">Cartão de Crédito</option>
+                <option value="debito">Cartão de Débito</option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="pix">Pix</option>
+            </select>
+    
+            <div class="input-pair">
+                <label for="mes">Mês:</label>
+                <input type="number" id="mes" name="mes" value="{{pedido.mes}}" required>
+            </div>
+    
+            <div class="input-pair">
+                <label for="dia">Dia:</label>
+                <input type="number" id="dia" name="dia" value="{{pedido.dia}}" required>
+            </div>
+    
+            
+            <label for="horario">Horários: {{pedido.hora}}h</label>
+            <select id="horario" name="horario" required>
+                <option value="{{pedido.hora}}">Editar horário</option>
+                <option value="8">08:00h</option>
+                <option value="9">09:00h</option>
+                <option value="10">10:00h</option>
+                <option value="11">11:00h</option>
+                <option value="14">14:00h</option>
+                <option value="15">15:00h</option>
+                <option value="16">16:00h</option>
+                <option value="17">17:00h</option>
+            </select>
+            
+    
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" value="{{pedido.endereco}}" required>
+            <button type="submit">Editar</button>
+        </form>
+        
+    </div>
+    
+</div>
+
+<div id="meuModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Solicitação enviada com sucesso! Aguarde a confirmação!</p>
+    </div>
+</div>
+</div>
+<script src="/front/Telas do Cliente/animacoes.js"></script>
+
+</body>
+

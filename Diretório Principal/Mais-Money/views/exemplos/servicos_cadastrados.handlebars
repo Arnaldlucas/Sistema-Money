@@ -1,0 +1,114 @@
+
+<body>
+    <link rel="stylesheet" href="/css/estilo_cliente/estilos_servicos.css">
+
+    <nav class="navbar">
+        <div class="logo">ServTec</div>
+        <ul class="nav-links">
+          <form action="/voltaInicio" method="post">
+        <li><input  type="submit" value="Home"></li></form>
+        </ul>
+      </nav>
+
+<div class="container">
+    <h2>Serviços em Andamento</h2>
+    {{#each pedido1}}
+    <table id="ativosServices">
+            <thead>
+            <tr>
+                <tr>
+                    <th>Nome do Serviço</th>
+                    <th>Valor R$</th>
+                    <th>Situação</th>
+                    <th>Forma de Pagamento</th>
+                    <th>Data de Agendamento</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Lucas remove esses tr e td de exemplo apenas para exibir os botões de ação ao lado de cada registro -->
+                <tr>
+                    <td>{{nome}}</td>
+                    <td>{{valor}}</td>
+                    <td>{{situacao}}</td>
+                    <td>{{formaPagamento}}</td>
+                    <td>{{mes}} - {{dia}} - {{hora}}</td>
+                 <td><button class="btn" onclick="confirmAction({{idPedido}})">Editar</button>
+                    <button class="btn" id="cancelar" onclick="confirmDelet({{idPedido}})">Cancelar</button></td>
+            </tr>
+           </tbody>
+    </table>
+      {{/each}}
+    <h2>Serviços Encerrados</h2>
+    {{#each pedido2}}
+    <table id="sevicosEncerrados">
+        <thead>
+            <tr>
+                <th>Nome do Serviço</th>
+                    <th>Valor R$</th>
+                    <th>Situação</th>
+                    <th>Forma de Pagamento</th>
+                    <th>Data de Agendamento</th>
+                    <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Lucas remove esses tr e td de exemplo apenas para exibir os botões de ação ao lado de cada registro -->
+            <tr>
+                <td>{{nome}}</td>
+                    <td>{{valor}}</td>
+                    <td>{{situacao}}</td>
+                    <td>{{formaPagamento}}</td>
+                    <td>{{mes}} - {{dia}} - {{hora}}</td>
+                <td>*Somente Vizualização*</td>
+            </tr>
+        </tbody>
+    </table>
+    {{/each}}
+</div>
+
+<div id="meuModal" class="modal">
+    
+  <div class="modal-content">
+    <span class="fechar">&times;</span>
+    <p id="modalText">Cancelar Pedido?</p>
+    <button class="btn" on id="confirmBtn">Cancelar</button>
+  </div>
+</div>
+
+<script>//Script de animação interno devido ao conflito de ids entre os outros modais, corrigirei depois!
+//configuraçoes do modal de ações
+const modal = document.getElementById("meuModal");
+const modalText = document.getElementById("modalText");
+const confirmBtn = document.getElementById("confirmBtn");
+
+//abrir texto
+function confirmAction(idPedido) {
+    window.location.href = '/editarPedido/' + idPedido;
+}
+
+function confirmDelet(idPedido){
+    modal.style.display = "block";
+    confirmBtn.addEventListener("click", function() {
+      window.location.href = '/cancelarPedido/' + idPedido;
+});
+}
+
+
+// Fechar o modal ao clicar no botão "X"
+const fecharBtn = document.getElementsByClassName("fechar")[0];
+fecharBtn.onclick = function() {
+    modal.style.display = "none";
+
+}
+
+// Fechar o modal se clicar fora dele
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+

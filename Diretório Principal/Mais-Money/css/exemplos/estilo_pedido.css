@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    
+}
+/* navegação */
+.navbar {
+    background-color: #2a1067;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar .logo {
+    font-size: 1.5rem;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin-right: 20px;
+    padding: 5px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-links li:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+.nav-links li a:hover{
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+/* formulario */
+
+.cont{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 20px); /* Ajuste para a largura do input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px; /* Espaço entre o label e o input */
+}
+
+.input-pair {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-container {
+    grid-column: 1 / -1; /* Botão ocupando todas as colunas */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* modalis */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.half-page {
+    width: 40%;
+    margin-left: 5%;
+    border-radius: 10px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Cor de fundo para a div */
+}
+
+.half-page img {
+    border-radius: 10px;
+    height: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    
+}
+
+.half-page .info {
+    margin-left: 40px;
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior para as informações */
+}

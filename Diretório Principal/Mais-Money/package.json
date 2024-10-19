@@ -1,0 +1,25 @@
+{
+  "name": "nodejsmysql",
+  "version": "1.0.0",
+  "description": "Aula 6 Programação Web, Node e Mysql connection",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJs",
+    "MySQL",
+    "Cadastro"
+  ],
+  "author": "Lucas Pinheiro",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "express-handlebars": "^7.1.2",
+    "express-session": "^1.18.0",
+    "mysql2": "^3.11.3",
+    "nodemon": "^3.1.0"
+  }
+}

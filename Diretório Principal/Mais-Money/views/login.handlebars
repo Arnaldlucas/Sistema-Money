@@ -1,0 +1,44 @@
+<header>
+  <title>Login</title>
+</header>
+<main>
+  <div class="container">
+    <div class="login-content">
+      <div class="login-left">
+        <form action="/login" method="post" id="user-login-form">
+          <p class="title">Login</p>
+          <div class="input-agroupt">
+            <input type="email" name="email" id="login-email" placeholder="Email" required>
+            <i class='bx bx-user'></i>
+          </div>
+          <div class="input-agroupt">
+            <input type="password" name="senha" id="login-senha" placeholder="Senha" required>
+            <i class='bx bx-lock-alt'></i>
+          </div>
+          <input type="submit" value="Entrar" id="login-salvar">
+          
+        </form>
+        <form action="/registro" method="post">
+            <div class="register-left">
+              <input class="bnt_regis" type="submit" value="Registre-se!">
+            </div>
+          </form>
+      </div>
+      <div class="login-right">
+        <img src="/imagens/login.png">
+        <div class="text-agroup">
+          <h2>Ta liso?</h2>
+        </div>
+        <div class="text-agroup">
+          <p>Organize seu dinheiro, controle seus gastos e realize seus objetivos.</p>
+        </div>
+        <form action="/registro" method="post">
+          <div class="register register-right">
+            <input class="bnt_regis" type="submit" value="Registre-se!">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <link rel="stylesheet" href="../css/login.css">
+</main>

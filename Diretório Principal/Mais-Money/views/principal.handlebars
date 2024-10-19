@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="/css/principal.css">
+    <link rel="stylesheet" href="/css/modal_despesas.css">
+    <link rel="stylesheet" href="/css/modal_preset.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/css/jquery-3.6.4.min.js"></script>
+
+
+</head>
+
+<body>
+
+
+    
+    <dialog id="modalDialog2" class="modal modal-radar">
+        <div class="modal-box">
+            <div class="close-btn" id="close-modal-radar"><i class='bx bx-x'></i></div>
+            <div class="modal-top">
+                <div class="title" id="coinTitle1">Radar de Gastos</div>
+                 </div>
+                    <canvas id="modalGastoRadar" class="modal-canvas" width="500" height="500"></canvas>
+            </div>
+
+    </dialog>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        $('.modal-radar').hide();
+        const closeBtn2 = document.getElementById('close');
+        const modalDialog2 = document.getElementById('modalDialog2');
+        const modalGastoRadarCanvas = document.getElementById('modalGastoRadar');
+            
+        renderRadarChartInModal();
+
+        $('#close-modal-radar').click(function(){
+            $('.modal-radar').fadeOut('slow');
+        })
+        $('#expand_radar').click(function(){
+            $('.modal-radar').fadeIn('slow');
+        })
+
+        function renderRadarChartInModal() {
+            // Código para renderizar o gráfico no modal
+            const ctxt = modalGastoRadarCanvas.getContext('2d');
+           const predefinedData = [15, 15, 30, 10, 10, 10, 10];
+
+            const labels = [];
+            const data = [];
+
+            {{#each predefinedLabels}}
+            labels.push('{{this}}');
+            {{/each}}
+            
+            {{#each sortedDespesas}}
+            data.push({{this}});
+            {{/each}}
+
+            new Chart(ctxt, {
+                type: 'radar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Gastos Mensais (%)',
+                            data: data,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Meta',
+                            data: predefinedData,
+                            backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                            borderColor: 'rgba(153, 102, 255, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+    });
+</script>
+
+    <dialog id="dialog-despesa-editar" role="dialog" aria-labelledby="modal-despesa-titulo"
+        aria-describedby="modal-despesa-descricao" class="modal modal-editar-despesa">
+        <div class="modal-box">
+            <div class="close-btn" id="close-editar-despesa-box"><i class='bx bx-x'></i></div>
+            <h3><i class='bx bx-wallet'></i> Editar Despesa</h3>
+
+            <!-- Exibição de id_despesa e usuarioId Inalterrvel -->
+            <p style="display: none;"><strong>ID da Despesa:</strong> <span id="modal-despesa-id"></span></p>
+            <p style="display: none;"> <strong>ID do Usuário:</strong> <span id="modal-usuario-id"></span></p>
+
+            <div class="input-agroup">
+                <label for="input-despesa-tipo">Tipo:</label>
+                <select name="input-tipo_despesa" id="input-despesa-tipo" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Alimentação">Alimentação</option>
+                    <option value="Transporte">Transporte</option>
+                    <option value="Moradia">Moradia</option>
+                    <option value="Educação">Educação</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Lazer">Lazer</option>
+                    <option value="Outras Despesas">Outras Despesas</option>
+                </select>
+            </div>
+            <div class="input-agroup">
+                <label for="input-despesa-valor">Valor:</label>
+                <input type="text" id="input-despesa-valor" aria-describedby="modal-despesa-descricao">
+            </div>
+            <div class="input-agroup">
+                <p id="modal-despesa-descricao"></p>
+                <button id="salvar-despesa-editar">Salvar</button>
+            </div>
+        </div>
+    </dialog>
+
+  
+
+    <dialog id="dialog-ganho-editar" role="dialog" aria-labelledby="modal-ganho-titulo"
+        aria-describedby="modal-ganho-descricao" class="modal modal-editar-ganho">
+        <div class="modal-box">
+            <div class="close-btn" id="close-editar-ganho-box"><i class='bx bx-x'></i></div>
+            <h3><i class='bx bx-wallet'></i> Editar ganho</h3>
+
+            <!-- Exibição de id_despesa e usuarioId Inalterrvel -->
+            <p style="display: none;"><strong>ID da ganho:</strong> <span id="modal-ganho-id"></span></p>
+           
+
+            <div class="input-agroup">
+                <label for="input-ganho-tipo">Tipo:</label>
+                <select name="input-ganho" id="input-ganho-tipo" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="Alimentação">Alimentação</option>
+                    <option value="Transporte">Transporte</option>
+                    <option value="Moradia">Moradia</option>
+                    <option value="Educação">Educação</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Lazer">Lazer</option>
+                    <option value="Outras Despesas">Outras Despesas</option>
+                </select>
+            </div>
+            <div class="input-agroup">
+                <label for="input-ganho-valor">Valor:</label>
+                <input type="text" id="input-ganho-valor" aria-describedby="modal-ganho-descricao">
+            </div>
+            <div class="input-agroup">
+                <p id="modal-ganho-descricao"></p>
+                <button id="salvar-ganho-editar">Salvar</button>
+            </div>
+        </div>
+    </dialog>
+      <script>
+        $('.modal-editar-ganho').hide();
+        $('#close-editar-ganho-box').click(function () {
+            $('.modal-editar-ganho').fadeOut('slow');
+        })
+    </script>
+
+    <script>
+        $('.modal-editar-despesa').hide();
+        $('#close-editar-despesa-box').click(function () {
+            $('.modal-editar-despesa').fadeOut('slow');
+        })
+    </script>
+
+    <div class="modal modal-despesa">
+        <div class="modal-box">
+            <div class="close-btn" id="close-despesa-box"><i class='bx bx-x'></i></div>
+            <h3><i class='bx bx-wallet'></i> Registrar Despesa</h3>
+
+            <form action="/atualizarDespesa" method="POST">
+                <div class="input-agroup">
+                    <input type="number" id="usuario_id" name="usuario_id" value="{{usuarioId}}" readonly
+                        style="display:none;">
+                    <label for="">Tipo</label>
+                    <select id="tipo_despesa" name="tipo_despesa" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Alimentação">Alimentação</option>
+                        <option value="Transporte">Transporte</option>
+                        <option value="Moradia">Moradia</option>
+                        <option value="Educação">Educação</option>
+                        <option value="Saúde">Saúde</option>
+                        <option value="Lazer">Lazer</option>
+                        <option value="Outras Despesas">Outras Despesas</option>
+                    </select>
+                </div>
+                <div class="input-agroup">
+                    <label for="">Valor R$</label>
+                    <input type="number" id="valor_despesa" name="valor_despesa" step="0.01" required
+                        placeholder="Ex: 25,50">
+                </div>
+                <div class="input-agroup">
+                    <label for="">Data</label>
+                    <input type="date" id="data_despesa" name="data_despesa" required>
+                </div>
+
+                <div class="input-agroup">
+                    <button type="submit">Salvar Despesa</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $('.modal-despesa').hide();
+        $('#close-despesa-box').click(function () {
+            $('.modal-despesa').fadeOut('slow');
+        });
+
+    </script>
+
+    <div class="modal modal-receita">
+        <div class="modal-box">
+            <div class="close-btn" id="close-receita-box"><i class='bx bx-x'></i></div>
+            <h3><i class='bx bx-wallet'></i> Registrar Receita</h3>
+
+            <form action="/atualizarReceita" method="POST">
+                <div class="input-agroup">
+                    <input type="number" id="usuario_id" name="usuario_id" value="{{usuarioId}}" readonly
+                        style="display:none;">
+                    <label for="">Tipo</label>
+                    <select id="tipo_ganho" name="tipo_ganho" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Salário">Salário <i class='bx bxs-bowl-rice'></i></option>
+                        <option value="Investimentos">Investimentos</option>
+                        <option value="Aluguel">Aluguel</option>
+                        <option value="Serviços">Serviços</option>
+                        <option value="Outras Fontes">Outras Fontes</option>
+
+                    </select>
+                </div>
+                <div class="input-agroup">
+                    <label for="">Valor R$</label>
+                    <input type="number" id="valor_ganho" name="valor_ganho" step="0.01" required
+                        placeholder="Ex: 25,50">
+                </div>
+                <div class="input-agroup">
+                    <label for="">Data</label>
+                    <input type="date" id="data_ganho" name="data_ganho" required>
+                </div>
+
+                <div class="input-agroup">
+                    <button type="submit">Salvar Despesa</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        $('.modal-receita').hide();
+        $('#close-receita-box').click(function () {
+            $('.modal-receita').fadeOut('slow');
+        });
+
+    </script>
+
+    <div class="modal modal-meta">
+    <div class="modal-box">
+        <div class="close-btn" id="close-meta-box"><i class='bx bx-x'></i></div>
+        <h3><i class='bx bx-wallet'></i> Definir Meta</h3>
+
+        <form action="/cadastrarOuAtualizarMeta" method="POST">
+            <div class="input-agroup">
+                <input type="number" id="usuario_id" name="usuario_id" value="{{usuarioId}}" readonly
+                    style="display:none;">
+                <label for="">Descrição</label>
+                <input type="text" id="descricao_meta" name="descricao_meta" required
+                    placeholder="Descreva Sua Meta" value="{{nome_meta}}">
+            </div>
+            <div class="input-agroup">
+                <label for="">Valor da Meta R$</label>
+                <input type="number" id="valor_meta" name="valor_meta" step="0.01" required
+                    placeholder="Ex: 25,50" value="{{valorMeta}}">
+            </div>
+            <div class="input-agroup">
+                <button type="submit">Salvar Meta</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $('.modal-meta').hide();
+     $('#close-meta-box').click(function(){
+        $('.modal-meta').fadeOut('slow');
+     });
+</script>
+
+<div class="modal modal-poupanca">
+    <div class="modal-box">
+        <div class="close-btn" id="close-poupanca-box"><i class='bx bx-x'></i></div>
+        <h3><i class='bx bx-wallet'></i> Definir Poupança</h3>
+
+        <form action="/cadastrarOuAtualizarPoupanca" method="POST">
+            <div class="input-agroup">
+                <input type="number" id="meta_id" name="meta_id" value="{{id_meta}}" readonly
+                    style="display:none;">
+            </div>
+            <div class="input-agroup">
+                <label for="">Valor da Poupança R$</label>
+                <input type="number" id="valor_poupanca" name="valor_poupanca" step="0.01" required
+                    placeholder="Ex: 25,50" value="">
+            </div>
+            <div class="input-agroup">
+                 <button type="submit">Poupar Valor</button>
+            </div>
+        </form>
+    
+    </div>
+</div>
+
+<script>
+    $('.modal-poupanca').hide(); 
+    $('#close-poupanca-box').click(function(){
+        $('.modal-poupanca').fadeOut('slow');
+    });
+</script>
+
+
+
+
+    <div class="btn-menu"><i class='bx bx-menu'></i></div>
+
+    <div class="container">
+        <div class="mais">
+
+            <img src="./imagens/mainmoney-horizontal.png" alt="Logo">
+            <div class="mais-botao">
+                <a href="#" class="btn-open-modal-despesa">
+                    <i class='bx bxs-add-to-queue' style='color:#ffffff'></i>
+                    Nova Despesa
+                </a>
+            </div>
+            <div class="mais-botao">
+                <a href="#" class="btn-open-modal-receita">
+                    <i class='bx bx-money-withdraw' style='color:#ffffff'></i>
+                    Atualizar Renda
+                </a>
+            </div>
+            <div class="mais-botao">
+                <a href="#" class="btn-open-modal-meta">
+                    <i class='bx bx-message-alt-add' style='color:#ffffff'></i>
+                    Definir Meta
+                </a>
+            </div>
+            <div class="mais-botao">
+                <a href="/logout">
+                    <i class='bx bx-cog' style='color:#ffffff'></i>
+                    Logout
+                </a>
+            </div>
+
+            <script>
+                $('.btn-open-modal-despesa').click(function () {
+                    $('.modal-despesa').fadeIn('slow');
+                });
+                $('.btn-open-modal-receita').click(function () {
+                    $('.modal-receita').fadeIn('slow');
+                });
+                   $('.btn-open-modal-meta').click(function(){
+                        $('.modal-meta').fadeIn('slow');
+                })
+            </script>
+
+            <!--Inicio Dialog Ganho-->
+
+        </div>
+
+
+
+        <div class="dados">
+            <h4 class="title"><i class='bx bxs-dashboard'></i> Dashboard</h4>
+            <div class="dados-balanco">
+                <div class="info-agroup">
+
+                    <p class="info-title"><i class='bx bx-wallet'></i>Balanço Total</p>
+                    <p class="balanco-view"> R$ <span class="balance-value">{{balanco}}</span> <span class="asteriscos visible">****</span>
+                        <span class="btn-view"><i class='bx bxs-show'></i></span>
+                    </p>
+
+
+                </div>
+                <div class="info-agroup">
+
+                    <p class="info-title"><i class='bx bx-trending-down'></i>Gasto Total</p>
+                    <p>{{somaDespesas}}</p>
+
+
+                </div>
+                <div class="info-agroup">
+
+                    <p class="info-title"><i class='bx bx-bar-chart-alt-2'></i>Meta</p>
+                    <p></p>{{nome_meta}}
+
+
+                </div>
+
+                <i class='bx bxs-wallet icon-dados'></i>
+
+            </div>
+            <div class="box-page">
+                <div class="page-one">
+                    <h5>Movimentações de Saída</h5>
+                    {{#each despesa}}
+                    <div class="despesa-list">
+                        <div class="card">
+                            <div class="card-text">
+                                <div class="data-card">
+                                    <p class="despesa-dia">{{extrairDia data_despesa}}</p>
+                                    <p class="despesa-mes">{{extrairMes data_despesa}}</p>
+                                </div>
+                                <div class="card-info">
+                                    <p class="despesa-desc">{{tipo_despesa}}</p>
+                                    <p class="despesa-value"><i class='bx bx-down-arrow-alt'></i> R$ {{valor_despesa}}
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <button href="#" class="btn-editar btn-editar-despesa" id="modal-despesa-novo-editar"
+                                    data-id="{{id_despesa}}" data-tipo="{{tipo_despesa}}" data-valor="{{valor_despesa}}"
+                                    data-usuario-id="{{usuario_id}}">
+                                    <i class='bx bxs-edit'></i>
+                                </button>
+                                <button class="btn-excluir btn-excluir-despesa" data-id="{{id_despesa}}"
+                                    data-tipo="{{tipo_despesa}}" data-valor="{{valor_despesa}}">
+                                    <i class='bx bxs-trash-alt'></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+                <div class="page-one">
+                    <h5>Movimentações de Entrada</h5>
+                    {{#each ganho}}
+                    <div class="despesa-list">
+                        <div class="card">
+                            <div class="card-text">
+                                <div class="data-card">
+                                    <p class="despesa-dia">{{extrairDia data_ganho}}</p>
+                                    <p class="despesa-mes">{{extrairMes data_ganho}}</p>
+                                </div>
+                                <div class="card-info">
+                                    <p class="despesa-desc">{{tipo_ganho}}</p>
+                                    <p class="receita-value"><i class='bx bx-up-arrow-alt'></i> R$ {{valor_ganho}}</p>
+                                </div>
+
+                            </div>
+                            <div class="card-action">
+
+                                <button href="#" class="btn-editar btn-editar-ganho" id="modal-ganho-novo-editar"
+                                    data-id="{{id_ganho}}" data-tipo="{{tipo_ganho}}" data-valor="{{valor_ganho}}"
+                                    data-usuario-id="{{usuario_id}}">
+                                    <i class='bx bxs-edit'></i>
+                                </button>
+                                <button class="btn-excluir btn-excluir-ganho" data-id="{{id_ganho}}"><i
+                                        class='bx bxs-trash-alt'></i></button>
+                            </div>
+
+                        </div>
+                    </div>
+                    {{/each}}
+
+
+
+
+
+                </div>
+            </div>
+            <div class="box-metas">
+                <div class="btn-poupar"></div>
+                <div class="dica-card">
+                    <div class="dica-icon"><i class='bx bxs-bulb'></i></div>
+                    <div class="dica-text">
+                        <p class="dica-title">Reduza despesas desnecessárias</p>
+                        <p class="dica-descricao">Identifique e corte gastos supérfluos para acelerar o acúmulo do
+                            fundo.
+                        </p>
+                    </div>
+                </div>
+                <div class="meta-card">
+                    <div class="poupar-btn">Poupar <i class='bx bx-layer-plus'></i></div>
+                    <p class="meta-title">Progesso da Meta</p>
+                    <div class="meta-text">
+                        <p class="meta-descricao">Poupança</p>
+                        <div class="progresso">
+                            <div class="progress-content" style="width: {{progresso_meta}}%;"></div>
+                        </div>
+                        <p class="meta-subdescricao"><span>Valor Guardado: R${{valor_poupanca}}</span> <span>Meta: R${{valorMeta}}</span></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script>
+              
+                const valor = $('.balance-value').text();
+
+                if (parseFloat(valor) < 0) {
+                        $('.balance-value').css('color', '#b80926');
+                }else{
+                    $('.balance-value').css('color', '#ffffff');
+                }
+
+                $('.btn-view').click(function () {
+                    if ($('.balance-value').hasClass('visible')) {
+                        $('.balance-value').removeClass('visible');
+                        $('.asteriscos').addClass('visible');
+                    } else {
+                        $('.balance-value').addClass('visible');
+                        $('.asteriscos').removeClass('visible');
+                }
+            })
+        </script>
+        <script>
+               $('.poupar-btn').click(function(){
+                        $('.modal-poupanca').fadeIn('slow');
+                })
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const editButtons = document.querySelectorAll(".btn-editar-despesa");
+                const modalDespesaEditar = document.getElementById("dialog-despesa-editar");
+                const closeModalEditar = document.getElementById("fechar-despesa-editar");
+                const modalDespesaId = document.getElementById('modal-despesa-id');
+                const modalUsuarioId = document.getElementById('modal-usuario-id');
+                const inputDespesaTipo = document.getElementById('input-despesa-tipo');
+                const inputDespesaValor = document.getElementById('input-despesa-valor');
+                const salvarDespesaEditar = document.getElementById('salvar-despesa-editar');
+
+                
+                editButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const id = button.getAttribute('data-id');
+                        const tipo = button.getAttribute('data-tipo');
+                        const valor = button.getAttribute('data-valor');
+                        const usuarioId = button.getAttribute('data-usuario-id');
+
+                        modalDespesaId.textContent = id;
+                        modalUsuarioId.textContent = usuarioId;
+                        inputDespesaTipo.value = tipo;
+                        inputDespesaValor.value = valor;
+
+                        $('.modal-editar-despesa').fadeIn('slow');
+                    });
+                });
+
+                salvarDespesaEditar.addEventListener('click', () => {
+                    const updatedId = modalDespesaId.textContent;
+                    const updatedTipo = inputDespesaTipo.value;
+                    const updatedValor = inputDespesaValor.value;
+
+                    // Enviar dados para o servidor
+                    fetch('/update-despesa', {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            id: updatedId,
+                            tipo: updatedTipo,
+                            valor: updatedValor
+                        })
+                    })
+                        .then(response => response.text())
+                        .then(message => {
+                            console.log(message);
+                            modalDespesaEditar.close();
+                            location.reload(); // Recarrega a página após a atualização
+                        })
+                        .catch(error => console.error('Erro:', error));
+                });
+
+            });
+
+            document.addEventListener('DOMContentLoaded', () => {
+    const editButtons = document.querySelectorAll(".btn-editar-ganho");
+    const modalGanhoEditar = document.getElementById("dialog-ganho-editar");
+    const closeModalEditar = document.getElementById("fechar-ganho-editar");
+    const modalGanhoId = document.getElementById('modal-ganho-id');
+    const modalUsuarioId = document.getElementById('modal-usuario-id');
+    const inputGanhoTipo = document.getElementById('input-ganho-tipo');
+    const inputGanhoValor = document.getElementById('input-ganho-valor');
+    const salvarGanhoEditar = document.getElementById('salvar-ganho-editar');
+
+    editButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const id = button.getAttribute('data-id');
+            const tipo = button.getAttribute('data-tipo');
+            const valor = button.getAttribute('data-valor');
+            const usuarioId = button.getAttribute('data-usuario-id');
+
+            modalGanhoId.textContent = id;
+            modalUsuarioId.textContent = usuarioId;
+            inputGanhoTipo.value = tipo;
+            inputGanhoValor.value = valor;
+
+            $('.modal-editar-ganho').fadeIn('slow');
+        });
+    });
+
+    salvarGanhoEditar.addEventListener('click', () => {
+        const updatedId = modalGanhoId.textContent;
+        const updatedTipo = inputGanhoTipo.value;
+        const updatedValor = inputGanhoValor.value;
+
+        // Enviar dados para o servidor
+        fetch('/update-ganho', {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                id: updatedId,
+                tipo: updatedTipo,
+                valor: updatedValor
+            })
+        })
+        .then(response => response.text())
+        .then(message => {
+            console.log(message);
+            modalGanhoEditar.close();
+            location.reload(); // Recarrega a página após a atualização
+        })
+        .catch(error => console.error('Erro:', error));
+    });
+});
+
+
+        </script>
+        <!--Script Modal Editar Despesa Dialog-->
+
+        
+
+        <div class="perfil">
+            <div class="perfil-dados">
+                <div class="perfil-icon">{{primeiraLetra nomeUsuario}}</div>
+                <h5>{{nomeUsuario}} </h5>
+                Bem Vindo!
+
+            </div>
+            <br><br><br>
+            <div class="top_radar" id="expand_radar">
+    <i class='bx bx-expand-alt'></i>
+    <h5>Radar de Gastos</h5>
+    <h2></h2>
+</div>
+<div>
+    <canvas id="gastoRadar" width="150px" height="150px"></canvas>
+</div>
+        </div>
+
+
+
+    </div>
+
+    <script>
+
+        $('.btn-menu').click(function () {
+            if ($('.mais').hasClass('oculto')) {
+                $('.mais').removeClass('oculto');
+            } else {
+
+                $('.mais').addClass('oculto');
+            }
+
+        })
+    </script>
+
+    <!--Inicio-Script-Radar-->
+    <script>
+        const modalGastoRadar = document.getElementById('gastoRadar');
+    const ctx = modalGastoRadar.getContext('2d');
+            const predefinedData = [15, 15, 30, 10, 10, 10, 10];
+
+            const labels = [];
+            const data = [];
+
+            {{#each predefinedLabels}}
+            labels.push('{{this}}');
+            {{/each}}
+            
+            {{#each sortedDespesas}}
+            data.push({{this}});
+            {{/each}}
+
+            new Chart(ctx, {
+                type: 'radar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            label: 'Gastos Mensais (%)',
+                            data: data,
+                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: 'rgba(75, 192, 192, 1)',
+                            borderWidth: 1
+                        },
+                        {
+                            label: 'Meta',
+                            data: predefinedData,
+                            backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                            borderColor: 'rgba(153, 102, 255, 1)',
+                            borderWidth: 1
+                        }
+                    ]
+                },
+                options: {
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100,
+                            ticks: {
+                                callback: function(value) {
+                                    return value + '%';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        
+   
+    </script>
+    <!--Fim-Script-Radar-->
+    
+    <!--Inicio-Script-Modal-Ganho-->
+    <script>
+        const buttonGanho = document.getElementById("modal-ganho")
+        const modalGanho = document.getElementById("dialog-ganho-novo")
+        const closeModalGanho = document.getElementById("fechar-ganho")
+        const fundoPretoGanho = document.getElementById("fundoBorrado-ganho")
+
+        buttonGanho.onclick = function () {
+            modalGanho.showModal()
+        }
+
+        closeModalGanho.onclick = function () {
+            modalGanho.close()
+        }
+
+        fundoPretoGanho.onclick = function () {
+            fundoPretoGanho.style.display = 'none';
+            modal.style.display = 'none';
+        }
+    </script>
+    <!--Fim-Script-Modal-Ganho-->
+
+
+    <!--Inicio-Script-Excluir-Despesa-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.btn-excluir-despesa').forEach(function (button) {
+                button.addEventListener('click', function () {
+                    // Encontrar o ID da despesa
+                    const despesaId = this.getAttribute('data-id');
+
+                    // Fazer uma solicitação DELETE para o backend
+                    fetch(`/despesas/${despesaId}`, {
+                        method: 'DELETE',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        }
+                    })
+                        .then(response => {
+                            if (response.ok) {
+                                // Recarregar a página após a exclusão
+                                location.reload();
+                            } else {
+                                console.error('Erro ao remover despesa.');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Erro na solicitação:', error);
+                        });
+                });
+            });
+        });
+
+    </script>
+    <!--Fim-Script-Excluir-Despesa-->
+
+    <!--Inicio-Script-Excluir-Ganho-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.btn-excluir-ganho').forEach(function (button) {
+                button.addEventListener('click', function () {
+                    // Encontrar o ID do ganho
+                    const ganhoId = this.getAttribute('data-id');
+
+                    // Fazer uma solicitação DELETE para o backend
+                    fetch(`/ganhos/${ganhoId}`, {
+                        method: 'DELETE',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        }
+                    })
+                        .then(response => {
+                            if (response.ok) {
+                                // Remover o item da interface
+                                const itemDiv = this.closest('.despesa-list'); // Ajuste para o elemento correto
+                                itemDiv.remove();
+                                console.log('Ganho removido com sucesso.');
+                                // Recarregar a página após a exclusão
+                                location.reload();
+                            } else {
+                                console.error('Erro ao remover ganho.');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Erro na solicitação:', error);
+                        });
+                });
+            });
+        });
+
+    </script>
+
+
+
+
+</body>
+
+</html>
