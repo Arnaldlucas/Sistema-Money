@@ -41,10 +41,6 @@ Para conduzir o processo de validação de usabilidade no sistema **+Money**, fo
   - **Problema:** Possível cadastro com campos incompletos.
   - **Classificação:** 3 (Grande)
   - **Solução:** O sistema deveria evitar essa situação com a validação de campos obrigatórios.
-- **Reconhecimento em vez de memorização**:
-  - **Problema:** O formulário não parece simples e intuitivo.
-  - **Classificação:** 0 (Falso-positivo)
-  - **Solução:** O formulário deve ser intuitivo e não exigir que o usuário memorize informações ou etapas.
 - **Erro ao cadastrar e login quando as informações estão vazias ou não cadastradas**:
   - **Problema:** Falta de mensagem de erro clara.
   - **Classificação:** 2 (Leve)
@@ -153,7 +149,7 @@ Esses pontos são baseados nos princípios de usabilidade de Nielsen, focando na
 | Controle e liberdade do usuário (H3)                        | 6             |
 | Consistência e padronização (H4)                            | 4             |
 | Prevenção de erros (H5)                                     | 4             |
-| Reconhecimento em vez de lembrar (H6)                       | 2             |
+| Reconhecimento em vez de lembrar (H6)                       | 1             |
 | Flexibilidade e eficiência de uso (H7)                      | 2             |
 | Estética e design minimalista (H8)                          | 3             |
 | Ajudar os usuários a reconhecerem, diagnosticarem e corrigirem erros (H9) | 3             |
@@ -163,7 +159,7 @@ Esses pontos são baseados nos princípios de usabilidade de Nielsen, focando na
 
 | Severidade         | Quantidade |
 |--------------------|------------|
-| 0 - Falso-Positivo | 3          |
+| 0 - Falso-Positivo | 1          |
 | 1 - Cosmético      | 3          |
 | 2 - Leve           | 9          |
 | 3 - Grande         | 5          |
