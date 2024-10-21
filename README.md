@@ -19,5 +19,5 @@
 **3. Diretório de Validação:**
   - /validacao_usabilidade: Issues documentando problemas de usabilidade encontrados com a avaliação heurística, incluindo heurísticas violadas e grau de severidade.
 
-**README:**
+**4. README:**
   - /README.md: Contém uma visão geral do trabalho, instruções para acessar e entender os arquivos.
