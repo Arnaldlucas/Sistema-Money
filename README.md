@@ -6,3 +6,18 @@
 - Arnald Bentes Lucas
 - José Santo de Moura Neto
 - Nivaldo Yenar Cidade Rêgo
+
+### **Os arquivos do trabalho foram divididos da seguinte forma:**
+
+**1. Diretório Principal:**
+  - /Mais_Money: Contém o código fonte e executáveis do sistema.
+  - /documentacao_tecnica: Inclui o backlog do produto com as histórias de usuário, dicionário de dados e os exemplos de uso.
+
+**2. Diretório de Verificação:**
+  - /verificacao: Issues documentando os defeitos identificados nos diversos artefatos, utilizando a taxonomia de anomalias de software.
+
+**3. Diretório de Validação:**
+  - /validacao_usabilidade: Issues documentando problemas de usabilidade encontrados com a avaliação heurística, incluindo heurísticas violadas e grau de severidade.
+
+**README:**
+  - /README.md: Contém uma visão geral do trabalho, instruções para acessar e entender os arquivos.
