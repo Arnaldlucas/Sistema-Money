@@ -1,6 +1,6 @@
 # Atividade de Verificação
 
-Este documento tem como objetivo principal descrever o processo de verificação aplicado ao sistema **Ordem de Serviço**, cujo propósito é assegurar que cada serviço e/ou produto gerado no projeto atenda aos requisitos especificados de maneira adequada. Para o sistema **Ordem de Serviço**, o processo de verificação foi realizado com o intuito de identificar e documentar pelo menos 10 defeitos em diversos artefatos de software, incluindo: **Backlog do Produto**, **Diagrama de Classes**, **Código Fonte** do sistema.
+Este documento tem como objetivo principal descrever o processo de verificação aplicado ao sistema **+Money**, cujo propósito é assegurar que cada serviço e/ou produto gerado no projeto atenda aos requisitos especificados de maneira adequada. Para o sistema **+Money**, o processo de verificação foi realizado com o intuito de identificar e documentar pelo menos 10 defeitos em diversos artefatos de software, incluindo: **Backlog do Produto**, **Diagrama de Classes**, **Código Fonte** do sistema.
 
 A verificação foi baseada na taxonomia de anomalias de software conforme o padrão **IEEE 1044 (2010)**, que classifica os defeitos em cinco categorias principais: **Dados**, **Interface**, **Lógica**, **Sintaxe** e **Padrões**. Além disso, utilizamos a taxonomia de defeitos de documentos de requisitos definida por **Shull (1998)**, baseada no padrão **IEEE 830 (1998)**, que classifica os defeitos em: **Omissão**, **Ambiguidade**, **Inconsistência**, **Fato Incorreto** e **Informação Estranha**.
 
