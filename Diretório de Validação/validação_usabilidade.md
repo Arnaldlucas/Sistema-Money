@@ -142,8 +142,9 @@ Para conduzir o processo de validação de usabilidade no sistema **+Money**, fo
   - **Classificação:** 2 (Leve)
   - **Solução:** Poderia ser útil sugerir valores automáticos caso o campo esteja vazio, como uma meta padrão.
 
-
 Esses pontos são baseados nos princípios de usabilidade de Nielsen, focando na eficiência e na facilidade de uso para garantir uma boa experiência do usuário.
+
+## Tabela 1: Quantidade de Heuristicas Violadas
 
 | **Heurísticas Violadas**                                     | **Quantidade** |
 |-------------------------------------------------------------|---------------|
@@ -164,7 +165,7 @@ Esses pontos são baseados nos princípios de usabilidade de Nielsen, focando na
 |--------------------|------------|
 | 0 - Falso-Positivo | 3          |
 | 1 - Cosmético      | 3          |
-| 2 - Leve           | 10         |
+| 2 - Leve           | 9          |
 | 3 - Grande         | 5          |
 
 
