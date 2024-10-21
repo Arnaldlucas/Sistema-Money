@@ -42,7 +42,7 @@ Para conduzir o processo de validação de usabilidade no sistema **+Money**, fo
   - **Classificação:** 3 (Grande)
   - **Solução:** O sistema deveria evitar essa situação com a validação de campos obrigatórios.
 - **Reconhecimento em vez de memorização**:
-  - **Problema:** O formulário parece simples e intuitivo.
+  - **Problema:** O formulário não parece simples e intuitivo.
   - **Classificação:** 0 (Falso-positivo)
   - **Solução:** O formulário deve ser intuitivo e não exigir que o usuário memorize informações ou etapas.
 - **Erro ao cadastrar e login quando as informações estão vazias ou não cadastradas**:
