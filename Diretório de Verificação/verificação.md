@@ -11,3 +11,16 @@ Todas as **issues** e os respectivos **relatórios de defeitos** estão disponí
 Neste repositório, cada defeito está documentado com descrições completas, detalhando sua severidade, prioridade e os tipos de falhas detectadas (como omissões, fatos incorretos, inconsistências, etc.). As tabelas de falhas também estão incluídas para auxiliar o leitor no processo de análise e compreensão dos problemas encontrados, facilitando a tomada de decisões para ajustes e melhorias no sistema.
 
 Este processo de verificação garante que o sistema **+Money** evolua conforme os padrões de qualidade estabelecidos, proporcionando uma base sólida para garantir sua robustez, funcionalidade e confiabilidade no uso.
+
+
+# Tabela de Falhas para “Referências de falhas”
+| Falha                                      | ID        | Descrição                                                                                                                                                                     |
+|--------------------------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cadastro de Usuários sem Verificação       | ID-001-2024    | O sistema não verifica a validade dos dados de cadastro, permitindo que usuários com informações incorretas ou falsas se registrem, comprometendo a integridade do sistema.    |
+| Login com Dados Inválidos                  | ID-002-2024    | O sistema permite que usuários façam login com e-mails não verificados, o que pode resultar em acesso não autorizado e comprometimento da segurança da conta.                  |
+| Falta de Confirmação de Atualização       | ID-003-2024    | O sistema não envia um código de confirmação para a atualização de dados sensíveis, como senhas, aumentando o risco de alterações indevidas por usuários não autorizados.      |
+| Metas Não Acompanhadas                     | ID-004-2024    | O sistema não notifica os usuários quando atingem os limites de gastos mensais definidos nas metas, resultando em dificuldades na gestão financeira e possível descontrole.    |
+| Dicas de Gestão Genéricas                  | ID-005-2024    | O sistema fornece dicas de gestão financeira que não consideram as metas pessoais do usuário, tornando-as menos relevantes e úteis para a situação financeira individual.      |
+| Ambiguidade nos Gráficos                   | ID-006-2024    | O gráfico de radar apresenta dados financeiros de maneira ambígua, dificultando a compreensão e análise por parte do usuário, o que pode levar a decisões financeiras inadequadas. |
+| Falta de Segurança em Dados Sensíveis      | ID-007-2024    | O sistema não garante a segurança dos dados pessoais dos usuários, expondo informações críticas a riscos de segurança, como vazamentos de dados.                             |
+
