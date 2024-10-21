@@ -53,8 +53,8 @@ Para conduzir o processo de validação de usabilidade no sistema **+Money**, fo
 ## Tela de Adicionar uma fonte de renda / Tela com a fonte adicionada e um valor
 ![Tela Inicial](https://github.com/Arnaldlucas/Sistema-Money/blob/main/Diret%C3%B3rio%20de%20Valida%C3%A7%C3%A3o/Imagens/sele%C3%A7%C3%A3oTipoReceita.png)
 ![Tela Inicial](https://github.com/Arnaldlucas/Sistema-Money/blob/main/Diret%C3%B3rio%20de%20Valida%C3%A7%C3%A3o/Imagens/registroReceita.png)
-- **Correspondência entre o sistema e o mundo real**: Usar terminologias que o usuário compreenda e garantir que a seleção de região esteja alinhada com a expectativa do usuário (exemplo: mapa interativo).
-- **Flexibilidade e eficiência de uso**: O sistema poderia permitir a seleção rápida de regiões favoritas ou mais usadas.
+- **Correspondência entre o sistema e o mundo real**: Usar terminologias que o usuário compreenda e garantir que a seleção de "tipo de renda" esteja alinhada com a expectativa do usuário.
+- **Flexibilidade e eficiência de uso**: O sistema poderia permitir a seleção rápida de 2 favoritas ou mais usadas.
 
 ## Tela com o gráfico gerado de acordo com a renda
 ![Tela Inicial](https://github.com/Arnaldlucas/Sistema-Money/blob/main/Diret%C3%B3rio%20de%20Valida%C3%A7%C3%A3o/Imagens/radarGastos.png)
