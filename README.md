@@ -20,7 +20,7 @@
 **4. README:**
   - /README.md: Contém uma visão geral do trabalho, instruções para acessar e entender os arquivos.
 
-**Integrantes da equipe:**
+### **Integrantes da equipe:**
 - Arnald Bentes Lucas
 - José Santo de Moura Neto
 - Nivaldo Yenar Cidade Rêgo
