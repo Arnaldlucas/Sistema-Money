@@ -41,7 +41,7 @@ Para conduzir o processo de validação de usabilidade no sistema **+Money**, fo
   - **Problema:** Possível cadastro com campos incompletos.
   - **Classificação:** 3 (Grande)
   - **Solução:** O sistema deveria evitar essa situação com a validação de campos obrigatórios.
-- **Erro ao cadastrar e login quando as informações estão vazias ou não cadastradas**:
+- **Ajudar os usuários a reconhecer, diagnosticar e corrigir erro**:
   - **Problema:** Falta de mensagem de erro clara.
   - **Classificação:** 2 (Leve)
   - **Solução**: O sistema deve oferecer mensagens de erro claras e ações corretivas, como destacar os campos obrigatórios que faltam, e seria útil incluir orientações sobre o formato de dados esperado (e.g., e-mail, senha).
@@ -152,7 +152,7 @@ Esses pontos são baseados nos princípios de usabilidade de Nielsen, focando na
 | Reconhecimento em vez de lembrar (H6)                       | 1             |
 | Flexibilidade e eficiência de uso (H7)                      | 2             |
 | Estética e design minimalista (H8)                          | 3             |
-| Ajudar os usuários a reconhecerem, diagnosticarem e corrigirem erros (H9) | 3             |
+| Ajudar os usuários a reconhecerem, diagnosticarem e corrigirem erros (H9) | 4             |
 | Ajuda e documentação (H10)                                  | 1             |
 
 ### Tabela 2 – Quantidade de severidades determinadas
