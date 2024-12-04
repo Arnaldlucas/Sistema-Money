@@ -31,4 +31,3 @@ Certifica-se de que os dados financeiros e de metas sejam corretamente armazenad
 ### Cypress
 - **Descrição**: Framework de teste end-to-end.
 - **Motivo da Escolha**: Cypress permite automação eficiente de testes funcionais e de interface, proporcionando resultados rápidos e detalhados.
-- **Integrações**: Utilizado com um ambiente de teste isolado (Docker) para garantir a repetibilidade dos testes.
