@@ -1,4 +1,4 @@
-**Tarefas e subtarefas transformadas para o passado:**  
+**Tarefas e subtarefas:**  
 
 1. **Adicionar Novo Hábito:** O participante foi orientado a criar um novo hábito, preenchendo campos como nome, frequência e horário. As dificuldades e sugestões foram avaliadas.  
 
