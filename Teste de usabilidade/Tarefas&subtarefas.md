@@ -1,27 +1,17 @@
-# Tarefas e subtarefas
-**Adicionar Novo Hábito:**
-Oriente o participante a criar um novo hábito, preenchendo campos como nome, frequência e horário. Avalie dificuldades e sugestões.
+**Tarefas e subtarefas transformadas para o passado:**  
 
-**Editar Hábito:**
-Peça para modificar um hábito existente, mudando a frequência ou excluindo. Observe a clareza do processo.
+1. **Adicionar Novo Hábito:** O participante foi orientado a criar um novo hábito, preenchendo campos como nome, frequência e horário. As dificuldades e sugestões foram avaliadas.  
 
-**Adicionar Nova Tarefa:**
-Oriente o participante a criar um novo hábito, preenchendo campos como nome, frequência e horário. Avalie dificuldades e sugestões.
+2. **Editar Hábito:** O participante foi solicitado a modificar um hábito existente, alterando a frequência ou excluindo-o. A clareza do processo foi observada.  
 
-**Editar Tarefa:**
-Peça para modificar um hábito existente, mudando a frequência ou excluindo. Observe a clareza do processo.
+3. **Adicionar Nova Tarefa:** O participante foi orientado a criar uma nova tarefa, preenchendo campos como nome, frequência e horário. As dificuldades e sugestões foram avaliadas.  
 
-**Adicionar Nova Renda:**
-Oriente o participante a criar um novo hábito, preenchendo campos como nome, frequência e horário. Avalie dificuldades e sugestões.
+4. **Editar Tarefa:** O participante foi solicitado a modificar uma tarefa existente, alterando a frequência ou excluindo-a. A clareza do processo foi observada.  
 
-**Editar Renda:**
-Peça para modificar um hábito existente, mudando a frequência ou excluindo. Observe a clareza do processo.
+5. **Adicionar Nova Renda:** O participante foi orientado a criar uma nova renda, preenchendo campos como nome, frequência e horário. As dificuldades e sugestões foram avaliadas.  
 
-**Personalização do App:**
-Instrua o participante a alterar configurações, como tema ou notificações. Veja a percepção de flexibilidade.
+6. **Editar Renda:** O participante foi solicitado a modificar uma renda existente, alterando a frequência ou excluindo-a. A clareza do processo foi observada.  
 
-**Configurar Lembretes:**
-Oriente o participante a ativar um lembrete para um hábito ou tarefa. Avalie clareza e simplicidade.
+7. **Personalização do App:** O participante foi instruído a alterar configurações, como tema ou notificações. A percepção de flexibilidade foi avaliada.  
 
-
-
+8. **Configurar Lembretes:** O participante foi orientado a ativar um lembrete para um hábito ou tarefa. A clareza e simplicidade do processo foram avaliadas.  
