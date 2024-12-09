@@ -55,7 +55,7 @@
 | Luan          |   40s          | 0                  | 1                     | 0                                  |
 
 ### Coleta de Experiência Geral
-#### Usuario Luan:
+#### Usuario1:
 **Aspectos Positivos**:
 - O app é intuitivo e legal.
 
