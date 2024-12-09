@@ -9,24 +9,6 @@
 
 
 
-
-
-### Coleta de Experiência Geral
-
-**Aspectos Positivos**:
-- O app é intuitivo e legal.
-
-**Aspectos Negativos**:
-- Informações pequenas e agrupadas podem dificultar a navegação.
-- Dificuldade em localizar a seção de acompanhamento de progresso, sugerindo um botão dedicado no menu principal.
-- Tema escuro dificulta a leitura, sendo preferido o tema claro.
-
-**Sugestões**:
-- Melhorar a organização das informações visuais.
-- Tornar o acesso ao acompanhamento de progresso mais evidente.
-- Oferecer maior contraste no tema escuro para facilitar a leitura.
-
-
 | Participante  | M1 Tempo Gasto | M2 Número de Erros | M3 Número de Confusão | M4 Número de Solicitações de Ajuda                      |
 |---------------|----------------|--------------------|-----------------------|------------------------------------|
 | Luan          |   8min         | 0                  | 15                     | 0                                  |
@@ -54,3 +36,19 @@
 | Participante  | M1 Tempo Gasto | M2 Número de Erros | M3 Número de Confusão | M4 Número de Solicitações de Ajuda                      |
 |---------------|----------------|--------------------|-----------------------|------------------------------------|
 | Luan          |   40s          | 0                  | 1                     | 0                                  |
+
+
+### Coleta de Experiência Geral
+#### Usuario Luan:
+**Aspectos Positivos**:
+- O app é intuitivo e legal.
+
+**Aspectos Negativos**:
+- Informações pequenas e agrupadas podem dificultar a navegação.
+- Dificuldade em localizar a seção de acompanhamento de progresso, sugerindo um botão dedicado no menu principal.
+- Tema escuro dificulta a leitura, sendo preferido o tema claro.
+
+**Sugestões**:
+- Melhorar a organização das informações visuais.
+- Tornar o acesso ao acompanhamento de progresso mais evidente.
+- Oferecer maior contraste no tema escuro para facilitar a leitura.
