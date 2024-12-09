@@ -1,22 +1,26 @@
-## **Tarefas e Subtarefas**
-1. **Tarefa 1: Registrar uma Receita**
-   - Subtarefa 1.1: Preencher os campos obrigatórios.
-   - Subtarefa 1.2: Salvar a receita.
+# Tarefas e subtarefas
+## 1. **Adicionar Novo Hábito**  
+   Oriente o participante a criar um novo hábito, preenchendo campos como nome, frequência e horário. Avalie dificuldades e sugestões.
 
-2. **Tarefa 2: Criar uma Meta Financeira**
-   - Subtarefa 2.1: Inserir o valor e o prazo da meta.
-   - Subtarefa 2.2: Salvar e visualizar a meta.
+## 2. **Editar Hábito**  
+   Peça para modificar um hábito existente, mudando a frequência ou excluindo. Observe a clareza do processo.
 
-3. **Tarefa 3: Gerar um Relatório de Despesas**
-   - Subtarefa 3.1: Selecionar o período.
-   - Subtarefa 3.2: Visualizar o gráfico gerado.
+## 3. **Acompanhamento de Progresso**  
+   Solicite que o usuário localize e interprete seu progresso no rastreador de hábitos. Veja se há confusão.
 
-4. **Tarefa 4: Editar uma Despesa**
-   - Subtarefa 4.1: Alterar o valor e a categoria da despesa.
-   - Subtarefa 4.2: Salvar a atualização.
+## 4. **Configurar Lembretes**  
+   Oriente o participante a ativar um lembrete para um hábito ou tarefa. Avalie clareza e simplicidade.
 
-5. **Tarefa 5: Fazer Logout**
-   - Subtarefa 5.1: Clique no botão de logout.
-   - Subtarefa 5.2: Confirmar o logout.
+## 5. **Planejamento Diário**  
+   Instrua o participante a criar e editar tarefas no plano diário. Pergunte como ele interpreta a interface.
 
----
+## 6. **Visualização do Calendário**  
+   Peça ao usuário para localizar um hábito ou tarefa específica no calendário. Avalie a navegação.
+
+## 7. **Personalização do App**  
+   Instrua o participante a alterar configurações, como tema ou notificações. Veja a percepção de flexibilidade.
+
+## 8. **Ajuda e Suporte**  
+   Oriente o usuário a acessar suporte ou tutoriais. Avalie a facilidade de localização e relevância das informações.
+
+Certifique-se de documentar o feedback e as sugestões dos participantes durante a aplicação.
