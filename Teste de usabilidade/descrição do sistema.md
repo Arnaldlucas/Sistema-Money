@@ -1,9 +1,7 @@
 
 ## **Descrição do Sistema**
-O **+Money** é um sistema web responsivo para gerenciar finanças pessoais. Os usuários podem adicionar receitas, despesas, metas financeiras e visualizar relatórios gráficos. O teste será realizado na versão para **desktop**.
+O Planner de Vida é um aplicativo de planejamento de vida e gestão de tarefas, disponível para dispositivos móveis. Ele oferece funcionalidades como gerenciador de tarefas, rastreador de hábitos, controle financeiro e diário pessoal seguro.
 
-- **Plataforma**: Desktop (Windows 10)
-- **Navegador**: Google Chrome (última versão)
-- **Resolução de Tela**: 1920x1080
+- **Plataforma**: Android/IOS
 
 ---
