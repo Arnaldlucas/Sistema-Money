@@ -1,3 +1,5 @@
+
+# falicitador: Nivaldo Yenar(geral)
 ### Objetivo: 
 ###   Tarefa: 
 | Participante  | M1 Tempo Gasto | M2 Número de Erros | M3 Número de Confusão | M4 Número de Solicitações de Ajuda |
@@ -6,6 +8,10 @@
 | José André    | 533            | 0                  | 2                     | 2                                  |
 
 
+
+
+
+# falicitador: Arnald Lucas
 ### objetivo: Adicionar Novo Hábito Oriente o participante a criar um novo hábito, preenchendo campos como nome, frequência e horário. Avalie dificuldades e sugestões.
 ###   Tarefa:  Adicionar Novo Hábito:
 | Participante  | M1 Tempo Gasto | M2 Número de Erros | M3 Número de Confusão | M4 Número de Solicitações de Ajuda                      |
