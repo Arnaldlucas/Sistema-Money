@@ -19,7 +19,7 @@
 | Luan          |   23s          | 0                  | 0                     | 0                                  |
 
 ### objetivo: Editar Hábito Peça para modificar um hábito existente, mudando a frequência ou excluindo. Observe a clareza do processo.
-###   Tarefa:  Editar Hábit:
+###   Tarefa:  Editar Hábito:
 | Participante  | M1 Tempo Gasto | M2 Número de Erros | M3 Número de Confusão | M4 Número de Solicitações de Ajuda                      |
 |---------------|----------------|--------------------|-----------------------|------------------------------------|
 | Luan          |   1min e 23s   | 0                  | 02                     | 0                                  |
