@@ -42,7 +42,7 @@
 |---------------|----------------|--------------------|-----------------------|------------------------------------|
 | Luan          |   1 min e 55s  | 1                  | 10                     | 0                                  |
 
-### objetivo:Personalização do App Instrua o participante a alterar configurações, como tema ou notificações. Veja a percepção de flexibilidade.
+### objetivo: Personalização do App Instrua o participante a alterar configurações, como tema ou notificações. Veja a percepção de flexibilidade.
 ###   Tarefa:  Personalização do App:
 | Participante  | M1 Tempo Gasto | M2 Número de Erros | M3 Número de Confusão | M4 Número de Solicitações de Ajuda                      |
 |---------------|----------------|--------------------|-----------------------|------------------------------------|
