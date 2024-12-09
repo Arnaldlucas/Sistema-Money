@@ -17,25 +17,11 @@ Para avaliar o **Planejador de Vida**, podemos realizar testes centrados nos obj
 
 **Métricas de avaliação:**
 - **Tempo necessário para completar cada tarefa.**
-- **Número de cliques para realizar as ações.**
 - **Facilidade percebida pelo usuário (avaliação subjetiva de 1 a 5).**
 
 ---
 
-#### **Objetivo 2: Identificar problemas de navegação e interação**
-**Tarefas para teste:**
-1. Navegar do painel inicial até o rastreador de despesas.
-2. Alterar uma despesa previamente registrada.
-3. Encontrar e usar o recurso de relatórios gráficos.
-
-**Métricas de avaliação:**
-- **Ocorrências de erros ou dificuldades (ex.: botão difícil de encontrar).**
-- **Clareza dos rótulos dos menus e botões.**
-- **Consistência da interface durante a navegação.**
-
----
-
-#### **Objetivo 3: Coletar feedback sobre a interface e a experiência do usuário**
+#### **Objetivo 2: Coletar feedback sobre a interface e a experiência do usuário**
 **Método:**
 1. **Entrevistas curtas com os usuários:** 
    - O que eles acharam mais fácil de usar?
@@ -47,12 +33,3 @@ Para avaliar o **Planejador de Vida**, podemos realizar testes centrados nos obj
    - Recomendações para melhoria.
 
 ---
-
-#### **Relatório Final**
-O relatório incluirá:  
-- **Pontos fortes** do aplicativo em termos de usabilidade.  
-- **Problemas encontrados** durante as tarefas.  
-- Sugestões para aprimorar a **interface**, **fluxo de navegação** e **funcionalidades**.  
-- **Análise geral da experiência do usuário**, incluindo gráficos ou tabelas baseadas nas métricas coletadas.  
-
-Esse plano ajuda a gerar insights valiosos para melhorar o **Planejador de Vida**! Se precisar, posso detalhar mais algum ponto. 😊
