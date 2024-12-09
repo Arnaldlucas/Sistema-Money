@@ -6,12 +6,23 @@
 | José André    | 533            | 0                  | 2                     | 2                                  |
 
 
-
-
-
+### objetivo: Adicionar Novo Hábito Oriente o participante a criar um novo hábito, preenchendo campos como nome, frequência e horário. Avalie dificuldades e sugestões.
+###   Tarefa:  Adicionar Novo Hábito:
 | Participante  | M1 Tempo Gasto | M2 Número de Erros | M3 Número de Confusão | M4 Número de Solicitações de Ajuda                      |
 |---------------|----------------|--------------------|-----------------------|------------------------------------|
-| Luan          |   8min         | 0                  | 15                     | 0                                  |
+| Luan          |   23s          | 0                  | 0                     | 0                                  |
+
+### objetivo: Editar Hábito Peça para modificar um hábito existente, mudando a frequência ou excluindo. Observe a clareza do processo.
+###   Tarefa:  Editar Hábit:
+| Participante  | M1 Tempo Gasto | M2 Número de Erros | M3 Número de Confusão | M4 Número de Solicitações de Ajuda                      |
+|---------------|----------------|--------------------|-----------------------|------------------------------------|
+| Luan          |   1min e 23s   | 0                  | 02                     | 0                                  |
+
+### objetivo: Acompanhamento de Progresso Solicite que o usuário localize e interprete seu progresso no rastreador de hábitos. Veja se há confusão.
+###   Tarefa:  Acompanhamento de Progresso:
+| Participante  | M1 Tempo Gasto | M2 Número de Erros | M3 Número de Confusão | M4 Número de Solicitações de Ajuda                      |
+|---------------|----------------|--------------------|-----------------------|------------------------------------|
+| Luan          |   1 min e 50s  | 0                  | 9                     | 0                                  |
 
 ### objetivo: Adicionar Nova Tarefa Oriente o participante a criar um novo hábito, preenchendo campos como nome, frequência e horário. Avalie dificuldades e sugestões.
 ###   Tarefa:  Adicionar Nova Tarefas:
@@ -36,7 +47,6 @@
 | Participante  | M1 Tempo Gasto | M2 Número de Erros | M3 Número de Confusão | M4 Número de Solicitações de Ajuda                      |
 |---------------|----------------|--------------------|-----------------------|------------------------------------|
 | Luan          |   40s          | 0                  | 1                     | 0                                  |
-
 
 ### Coleta de Experiência Geral
 #### Usuario Luan:
